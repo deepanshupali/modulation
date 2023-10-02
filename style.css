@@ -1,0 +1,263 @@
+* {
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+
+}
+body {
+  margin: 0;
+  font-family: var(--font-karla);
+}
+:root {
+  --dark-color:#130F49;
+  --main-color:#55527C;
+  --yellow-color:#FF972D;
+  --blue-color:#A5A6FF;
+  --font-karla:"Karla", sans-serif;
+  --font-inter:"Inter", sans-serif;
+  --font-kristi:"Kristi", sans-serif;
+}
+.color-blue{
+  color: var(--blue-color);
+}
+.row {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+.col-20 {
+  width: 20%;
+  height: 700px;
+  float: left;
+
+  padding: 0 20px;
+}
+.nav {
+  font-size: 16px;
+  padding: 0;
+  list-style-type: none;
+  
+}
+nav {
+  width: 100%;
+
+  margin: 100px 0 100px 0;
+}
+nav li {
+  padding: 10px 0;
+  font-weight: 400;
+}
+nav li a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+nav a:hover {
+  color: var(--blue-color);
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.social ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.social li {
+  float: left;
+  margin: 0 10px;
+  padding: 5px;
+  background: #130f490d;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
+}
+.social li a {
+  color: black;
+}
+.terms {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--main-color);
+  text-align-last:center;
+}
+
+/*main right column */
+.col-80 {
+  width: 80%;
+  height: 700px;
+  float: left;
+  padding: 40px;
+
+}
+.col-50 {
+  width: 50%;
+  height: 100%;
+  float: left;
+  
+
+}
+.col-50 img {
+  width:80%;
+}
+.col-flex {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  /* padding-left: 25px; */
+}
+.second-col-bg {
+  background-color: #effbf8;
+}
+.text-center {
+  text-align: center;
+}
+.author{
+  padding-top: 30px;
+}
+.author h3 {
+  margin-block-end: 20px;
+  font-weight: 800;
+  font-size: 18px;
+  font-family: var(--font-inter);
+  color: var(--dark-color);
+  position: relative;
+  z-index: 1;
+}
+.author h3::before{
+  position: absolute;
+  content: "PremKumar"; 
+  font-family: var(--font-kristi);
+  color: rgb(73 15 15 /7%);
+z-index: -1;
+font-style: italic;
+transform: translate(-50%,50%);
+top: -350%;
+font-size: 60px;
+line-height: -1;
+left:48%;
+}
+.logo {
+  border: 2px solid green;
+  border-radius: 61px;
+  width: 30%;
+
+}
+/* delete this */
+.padl-100 {
+  /* padding: 50px 0px 0px 100px; */
+}
+.intro {
+font-size: 50px;
+line-height: 60px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-block-end: 0;
+  color: var(--dark-color);
+font-family: var(--font-inter);
+}
+.intro .name {
+color: var(--blue-color);
+}
+.info{
+  padding-right: 30%;
+  line-height: 2;
+  color: var(--main-color);
+}
+
+.work{
+display: flex;
+gap: 10px;
+  margin-top:10px;
+  
+}
+.md,
+.mi {
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border: 1px solid #130f49;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.5s background-color;
+}
+.md {
+
+  background-color: var(--dark-color);
+  color:white;  
+}
+.work .md {
+text-decoration: none;
+  color: white;
+}
+.work .mi{
+  text-decoration: none;
+  color: var(--main-color);
+}
+.work .md:hover{
+  text-decoration: none;
+    color: var(--main-color);
+    background-color: white;
+  }
+
+.work .mi:hover{
+  text-decoration: none;
+    color: white;
+    background-color:var(--dark-color);
+    
+  }
+.mi {
+  background-color: #effbf8;
+  /* margin-top: 8px; */
+}
+.contact {
+  margin-top: 50px;
+  border-left: 5px solid var(--yellow-color);
+  padding-left: 8px;
+  
+}
+.contact p a:hover{
+color: var(--yellow-color);
+}
+.contact p a{
+  text-decoration: none;
+  color: var(--main-color);
+  transition: 0.2s color;
+}
+
+
+.m-0 {
+  margin: 0;
+}
+.animation{
+  animation: animate infinite;
+}
+@keyframes animate {
+  0%{
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  35%{
+    transform: rotateX(120deg);
+    opacity: 0;
+  }
+  65%{
+
+    opacity: 0;
+  }
+  100%{
+    transform: rotateX(180deg);
+    opacity: 1;
+  }
+}
