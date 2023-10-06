@@ -8,47 +8,76 @@
   <style>
     .parent {
       position: relative;
+      height: 400px;
     }
     .parent::before {
-      content: "fghgfhgfhg";
+      /* if we remove content then no inline element will be created */
+      content: "";
+      font-size: 20px;
       width: 100%;
       background-image: url(./download.jpeg);
       height: 400px;
       opacity: 0.5;
+
       z-index: -2;
+      /* without absolute there will be no width or height */
       position: absolute;
+      background-repeat: no-repeat;
+      background-size: 100% 400px;
     }
     .first h1 {
-        /* z-index: -3; */
+      position: absolute;
+      top: 30%;
+      left: 40%;
+      text-align: center;
       color: black;
       font-weight: 900;
     }
+    .para{
+        width: 100%;
+    }
+    .col1,.col2{
+width: 50%;
+display: inline-block;
+    }
+    .border{
+        display: inline-block;
+        width: auto;
+        border-top: 2px solid black;
+        border-left: 1px solid black;
+
+
+    }
+
   </style>
   <body>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
+    <!-- 3oct -->
     <div class="parent">
       <div class="first"><h1>deepanshu</h1></div>
     </div>
 
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
-    <h1>123</h1>
+<!-- 4oct -->
+    <img src="./new.jpeg" alt="dog" usemap="#demo" width="400px" height="379px">
+    <map name="demo">
+        <area shape="circle" coords="337,300,44"  href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjE6eLf6NuBAxXF1zgGHc_WDikQPAgJ" alt="first">
+    </map>
+    <iframe src="https://www.modulationdigital.com/" width="100%" height="400px" >here</iframe>
+
+    <ul style="color: green;">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <div>
+        <div class="para">
+            <span class="col1">here</span>
+            <span class="col2"><img src="./new.jpeg" alt=""></span>
+        </div>
+    </div>
+    <span class="border">
+        <img src="./new.jpeg" alt="">
+    </span>
+   
   </body>
+
 </html>
